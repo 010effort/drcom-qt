@@ -1,0 +1,335 @@
+/* ============================================================
+   吉林大学校园网认证客户端 界面样式（深色模式）
+   主色：吉大蓝 #3d7bd6 / #1e4e8c；背景深色系
+   ============================================================ */
+
+QMainWindow {
+    background: #17181c;
+}
+
+/* ---------- 顶部标题区（保持吉大蓝渐变） ---------- */
+#headerWidget {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+                                stop:0 #3d7bd6, stop:1 #1e4e8c);
+    border-bottom: 3px solid #0d2c52;
+}
+
+#appTitleLabel {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#appSubLabel {
+    color: rgba(255, 255, 255, 0.82);
+    font-size: 13px;
+}
+
+/* ---------- 内容区 ---------- */
+#contentWidget {
+    background: #202127;
+}
+
+QLabel {
+    color: #dfe3e8;
+    font-size: 14px;
+}
+
+QLineEdit {
+    background: #2a2c33;
+    border: 1px solid #3a3d47;
+    border-radius: 8px;
+    padding: 11px 14px;
+    font-size: 14px;
+    color: #e6e8ec;
+    selection-background-color: #3d7bd6;
+}
+
+QLineEdit:focus {
+    border: 1px solid #3d7bd6;
+    background: #2e3138;
+}
+
+QLineEdit:disabled {
+    background: #24262c;
+    color: #7c8089;
+}
+
+QPushButton {
+    background: #2e313a;
+    border: 1px solid #3f434e;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-size: 14px;
+    color: #dde1e7;
+}
+
+QPushButton:hover {
+    background: #383c46;
+}
+
+QPushButton:pressed {
+    background: #22252b;
+}
+
+QPushButton:disabled {
+    background: #26282e;
+    color: #7c8089;
+    border-color: #33363e;
+}
+
+/* 主登录按钮 */
+#btnLogin {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                stop:0 #4a86d9, stop:1 #2a63ad);
+    border: none;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 13px 0;
+    min-height: 20px;
+}
+
+#btnLogin:hover {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                stop:0 #5b94e2, stop:1 #3370bd);
+}
+
+#btnLogin:pressed {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                stop:0 #2a63ad, stop:1 #1e4e8c);
+}
+
+#btnLogin:disabled {
+    background: #3a4350;
+    color: #9aa6b5;
+}
+
+/* 注销按钮 */
+#btnLogout {
+    background: #26282e;
+    border: 1px solid #3f434e;
+    color: #d3d7dd;
+    font-size: 15px;
+    padding: 10px 0;
+}
+
+#btnLogout:hover {
+    background: #2e3138;
+    border-color: #52586a;
+}
+
+#btnLogout:disabled {
+    background: #22242a;
+    color: #6f737c;
+}
+
+/* 小按钮 */
+#btnRefreshMac, #btnSettings {
+    padding: 7px 12px;
+    font-size: 13px;
+    background: #27303d;
+    border: 1px solid #3a4a63;
+    color: #9db8dd;
+}
+
+#btnRefreshMac:hover, #btnSettings:hover {
+    background: #2e3a4b;
+}
+
+/* 底部文字链接按钮 */
+#btnSettings, #btnWindow, #btnNav {
+    border: none;
+    background: transparent;
+    color: #6fa3e8;
+    padding: 4px 8px;
+    font-size: 13px;
+}
+
+#btnSettings:hover, #btnWindow:hover, #btnNav:hover {
+    background: #2b3442;
+    border-radius: 6px;
+    color: #9db8dd;
+}
+
+/* ---------- 状态卡片 ---------- */
+#statusCard {
+    background: #262932;
+    border: 1px solid #343845;
+    border-radius: 10px;
+}
+
+#statusLabel {
+    font-size: 14px;
+    font-weight: bold;
+    color: #e8ebef;
+}
+
+#ipLabel {
+    font-size: 13px;
+    color: #8d939e;
+}
+
+/* ---------- 底部提示 ---------- */
+#hintLabel {
+    color: #7d838d;
+    font-size: 12px;
+}
+
+QCheckBox {
+    font-size: 14px;
+    color: #c8ccd2;
+    spacing: 8px;
+}
+
+QCheckBox::indicator {
+    width: 18px;
+    height: 18px;
+    border: 1px solid #4a4e5a;
+    border-radius: 5px;
+    background: #2a2c33;
+}
+
+QCheckBox::indicator:hover {
+    border-color: #3d7bd6;
+}
+
+QCheckBox::indicator:checked {
+    background: #2a63ad;
+    border-color: #2a63ad;
+    image: none;
+}
+
+/* ---------- 下拉框（唤醒模式） ---------- */
+QComboBox {
+    background: #2a2c33;
+    border: 1px solid #3a3d47;
+    border-radius: 8px;
+    padding: 6px 10px;
+    font-size: 13px;
+    color: #e6e8ec;
+}
+
+QComboBox:hover {
+    border-color: #3d7bd6;
+}
+
+QComboBox:disabled {
+    background: #24262c;
+    color: #7c8089;
+}
+
+QComboBox::drop-down {
+    border: none;
+    width: 22px;
+}
+
+QComboBox::down-arrow {
+    image: none;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid #9aa3ae;
+    margin-right: 6px;
+}
+
+QComboBox QAbstractItemView {
+    background: #23252b;
+    border: 1px solid #3a3d47;
+    border-radius: 6px;
+    color: #d5d9df;
+    selection-background-color: #3d7bd6;
+    selection-color: #ffffff;
+    outline: 0;
+}
+
+QToolTip {
+    background: #1e2a38;
+    color: #ffffff;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+QMenu {
+    background: #23252b;
+    border: 1px solid #3a3d47;
+    border-radius: 8px;
+    padding: 6px;
+}
+
+QMenu::item {
+    padding: 7px 26px 7px 16px;
+    border-radius: 6px;
+    font-size: 13px;
+    color: #d5d9df;
+}
+
+QMenu::item:selected {
+    background: #2f3d55;
+    color: #9db8dd;
+}
+
+QMenu::item:disabled {
+    color: #6f737c;
+}
+
+QMenu::separator {
+    height: 1px;
+    background: #33363e;
+    margin: 4px 8px;
+}
+
+/* ---------- 网址导航对话框 ---------- */
+NavDialog {
+    background: #1c1e23;
+}
+
+#navTitle {
+    font-size: 20px;
+    font-weight: bold;
+    color: #6fa3e8;
+}
+
+#navSub {
+    color: #8a909a;
+    font-size: 12px;
+}
+
+NavDialog QGroupBox {
+    background: #26282e;
+    border: 1px solid #343845;
+    border-radius: 10px;
+    margin-top: 12px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #9db8dd;
+}
+
+NavDialog QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 14px;
+    top: 10px;
+    padding: 0 4px;
+}
+
+NavDialog QPushButton {
+    background: #2a2d35;
+    border: 1px solid #3a3d47;
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-size: 13px;
+    color: #d5d9df;
+    text-align: left;
+}
+
+NavDialog QPushButton:hover {
+    background: #313a4a;
+    border-color: #4a5a75;
+    color: #9db8dd;
+}
+
+NavDialog QPushButton:pressed {
+    background: #22252b;
+}

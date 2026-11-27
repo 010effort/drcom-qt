@@ -1,0 +1,329 @@
+/* ============================================================
+   吉林大学校园网认证客户端 界面样式
+   主色：吉大蓝 #1e4e8c / #3d7bd6
+   ============================================================ */
+
+QMainWindow {
+    background: #f2f4f8;
+}
+
+/* ---------- 顶部标题区 ---------- */
+#headerWidget {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+                                stop:0 #3d7bd6, stop:1 #1e4e8c);
+    border-bottom: 3px solid #16385f;
+}
+
+#appTitleLabel {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#appSubLabel {
+    color: rgba(255, 255, 255, 0.82);
+    font-size: 13px;
+}
+
+/* ---------- 内容区 ---------- */
+#contentWidget {
+    background: #ffffff;
+}
+
+QLabel {
+    color: #2b333d;
+    font-size: 14px;
+}
+
+QLineEdit {
+    background: #f7f9fc;
+    border: 1px solid #d6dce4;
+    border-radius: 8px;
+    padding: 11px 14px;
+    font-size: 14px;
+    color: #2b333d;
+    selection-background-color: #3d7bd6;
+}
+
+QLineEdit:focus {
+    border: 1px solid #3d7bd6;
+    background: #ffffff;
+}
+
+QLineEdit:disabled {
+    background: #eef1f5;
+    color: #a9b0b9;
+}
+
+QPushButton {
+    background: #f0f3f7;
+    border: 1px solid #d6dce4;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-size: 14px;
+    color: #2b333d;
+}
+
+QPushButton:hover {
+    background: #e4eaf1;
+}
+
+QPushButton:pressed {
+    background: #d8e0ea;
+}
+
+QPushButton:disabled {
+    background: #f2f4f7;
+    color: #b6bdc6;
+    border-color: #e3e7ec;
+}
+
+/* 主登录按钮 */
+#btnLogin {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                stop:0 #4a86d9, stop:1 #2a63ad);
+    border: none;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 13px 0;
+    min-height: 20px;
+}
+
+#btnLogin:hover {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                stop:0 #5b94e2, stop:1 #3370bd);
+}
+
+#btnLogin:pressed {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                stop:0 #2a63ad, stop:1 #1e4e8c);
+}
+
+#btnLogin:disabled {
+    background: #a9bdd8;
+    color: #f0f4fa;
+}
+
+/* 注销按钮 */
+#btnLogout {
+    background: #ffffff;
+    border: 1px solid #d6dce4;
+    color: #4a5560;
+    font-size: 15px;
+    padding: 10px 0;
+}
+
+#btnLogout:hover {
+    background: #f5f7fa;
+    border-color: #b9c3cf;
+}
+
+#btnLogout:disabled {
+    background: #f6f8fa;
+    color: #c0c7cf;
+}
+
+/* 小按钮 */
+#btnRefreshMac, #btnSettings {
+    padding: 7px 12px;
+    font-size: 13px;
+    background: #eef3fa;
+    border: 1px solid #cfdcef;
+    color: #1e4e8c;
+}
+
+#btnRefreshMac:hover, #btnSettings:hover {
+    background: #e2ecf9;
+}
+
+/* 底部文字链接按钮 */
+#btnSettings, #btnWindow, #btnNav {
+    border: none;
+    background: transparent;
+    color: #3d7bd6;
+    padding: 4px 8px;
+    font-size: 13px;
+}
+
+#btnSettings:hover, #btnWindow:hover, #btnNav:hover {
+    background: #e8f0fb;
+    border-radius: 6px;
+    color: #1e4e8c;
+}
+
+/* ---------- 状态卡片 ---------- */
+#statusCard {
+    background: #f5f8fc;
+    border: 1px solid #e0e7f0;
+    border-radius: 10px;
+}
+
+#statusLabel {
+    font-size: 14px;
+    font-weight: bold;
+    color: #2b333d;
+}
+
+#ipLabel {
+    font-size: 13px;
+    color: #7a828c;
+}
+
+/* ---------- 底部提示 ---------- */
+#hintLabel {
+    color: #9aa2ab;
+    font-size: 12px;
+}
+
+QCheckBox {
+    font-size: 14px;
+    color: #3a434d;
+    spacing: 8px;
+}
+
+QCheckBox::indicator {
+    width: 18px;
+    height: 18px;
+    border: 1px solid #c3cad4;
+    border-radius: 5px;
+    background: #ffffff;
+}
+
+QCheckBox::indicator:hover {
+    border-color: #3d7bd6;
+}
+
+QCheckBox::indicator:checked {
+    background: #2a63ad;
+    border-color: #2a63ad;
+    image: none;
+}
+
+/* ---------- 下拉框（唤醒模式） ---------- */
+QComboBox {
+    background: #f7f9fc;
+    border: 1px solid #d6dce4;
+    border-radius: 8px;
+    padding: 6px 10px;
+    font-size: 13px;
+    color: #2b333d;
+}
+
+QComboBox:hover {
+    border-color: #3d7bd6;
+}
+
+QComboBox:disabled {
+    background: #eef1f5;
+    color: #9aa3ad;
+}
+
+QComboBox::drop-down {
+    border: none;
+    width: 22px;
+}
+
+QComboBox::down-arrow {
+    image: none;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid #4a5560;
+    margin-right: 6px;
+}
+
+QComboBox QAbstractItemView {
+    background: #ffffff;
+    border: 1px solid #d6dce4;
+    border-radius: 6px;
+    color: #2b333d;
+    selection-background-color: #e8f0fb;
+    selection-color: #1e4e8c;
+    outline: 0;
+}
+
+QToolTip {
+    background: #1e2a38;
+    color: #ffffff;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+QMenu {
+    background: #ffffff;
+    border: 1px solid #d6dce4;
+    border-radius: 8px;
+    padding: 6px;
+}
+
+QMenu::item {
+    padding: 7px 26px 7px 16px;
+    border-radius: 6px;
+    font-size: 13px;
+    color: #2b333d;
+}
+
+QMenu::item:selected {
+    background: #e8f0fb;
+    color: #1e4e8c;
+}
+
+QMenu::item:disabled {
+    color: #b6bdc6;
+}
+
+/* ---------- 网址导航对话框 ---------- */
+NavDialog {
+    background: #f5f7fb;
+}
+
+#navTitle {
+    font-size: 20px;
+    font-weight: bold;
+    color: #1e4e8c;
+}
+
+#navSub {
+    color: #8a9199;
+    font-size: 12px;
+}
+
+NavDialog QGroupBox {
+    background: #ffffff;
+    border: 1px solid #e0e7f0;
+    border-radius: 10px;
+    margin-top: 12px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #1e4e8c;
+}
+
+NavDialog QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 14px;
+    top: 10px;
+    padding: 0 4px;
+}
+
+NavDialog QPushButton {
+    background: #f2f6fb;
+    border: 1px solid #dde5ef;
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-size: 13px;
+    color: #2b333d;
+    text-align: left;
+}
+
+NavDialog QPushButton:hover {
+    background: #e2ecf9;
+    border-color: #9db8dd;
+    color: #1e4e8c;
+}
+
+NavDialog QPushButton:pressed {
+    background: #d5e3f5;
+}
